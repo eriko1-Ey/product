@@ -1,0 +1,80 @@
+/*main内容*/
+main {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    width: 1512px;
+    height: 1000px;
+}
+
+.product-form__heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 20px 50px;
+}
+
+.product-form__heading-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.product-form__heading-btn {
+    float: right;
+    background-color: #f5c800;
+    padding: 5px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*サーチ欄とイメージ欄のflex*/
+.product-form__inner {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-left: 30px;
+}
+
+/*サーチ欄*/
+.product-form__search {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+}
+
+.product-form__search-text {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.product-form__search-btn {
+    margin-top: 20px;
+    width: 200px;
+    background-color: #f5c800;
+    border-radius: 5px;
+}
+
+.product-form__search-input {
+    width: 200px;
+    height: 30px;
+}
+
+/*イメージ欄*/
+.product-form__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 600px;
+}
+
+.content-text {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 30px;
+    margin-right: 20px;
+}

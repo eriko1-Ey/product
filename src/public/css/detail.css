@@ -1,0 +1,77 @@
+/*main内容*/
+main {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    width: 1512px;
+    height: 797px;
+}
+
+.detail-form {
+    margin: 0 auto;
+}
+
+.detail-form__input {
+    padding-top: 5px;
+}
+
+.detail-form__input-inner {
+    width: 300px;
+    height: 20px;
+}
+
+.detail-form__description {
+    width: 750px;
+    height: 80px;
+}
+
+.detail-form__btn {
+    text-align: center;
+}
+
+.detail-form__btn-return {
+    padding: 5px;
+    width: 35%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background: #dddddd;
+    color: #000;
+    cursor: pointer;
+}
+
+.detail-form__btn-update {
+    padding: 5px;
+    width: 35%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background: #fdbf64;
+    color: #000;
+    cursor: pointer;
+}
+
+/*グリッドレイアウト記述*/
+.detail-form__form {
+    display: grid;
+    grid-template:
+        "img input" 400px
+        "description description" 200px
+        /400px 400px;
+    padding: 20px;
+}
+
+.item-img {
+    grid-area: img;
+    padding-top: 20px;
+}
+
+.item-input {
+    grid-area: input;
+    padding: 1rem;
+}
+
+.item-description {
+    grid-area: description;
+    padding: 1rem;
+}

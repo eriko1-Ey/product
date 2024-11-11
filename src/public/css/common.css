@@ -1,0 +1,13 @@
+.header {
+    background: #ffffff;
+    width: 1512px;
+    height: 53px;
+}
+
+.header__logo {
+    color: #f5c800;
+    font-family: serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
