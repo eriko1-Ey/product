@@ -4,6 +4,7 @@ MOGITATE
 Dockerビルド
 1. git clone リンク
 2. docker compose up -d --build
+   
 *MySQLは、OSによって起動しない場合があるため、それぞれのPCに合わせてdocker-compose.ymlファイルを編集してください。
 
 ##Laravel環境構築
