@@ -8,7 +8,7 @@
 <div class="product-form">
     <div class="product-form__heading">
         <div class="product-form__heading-title">商品一覧</div>
-        <a class="product-form__heading-btn" href="">+商品を追加</a>
+        <a class="product-form__heading-btn" href="/products/register">+商品を追加</a>
     </div>
     <div class="product-form__inner">
         <div class="product-form__search">

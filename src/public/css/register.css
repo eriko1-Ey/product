@@ -44,6 +44,10 @@ main {
     height: 80px;
 }
 
+.register-form__error-message {
+    color: red;
+}
+
 .register-form__btn {
     text-align: center;
 }

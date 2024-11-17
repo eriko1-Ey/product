@@ -8,7 +8,8 @@
 <div class="register-form">
     <h2 class="register-form__heading">商品登録</h2>
     <div class="register-form__inner">
-        <form class="register-form__form">
+        <form class="register-form__form" action="/products/register" method="post" enctype="multipart/form-data">
+            @csrf
             <div class="register-form__group">
                 <label class="register-form__label" for="name">商品名</label>
                 <span class="register-form__label-span">必須</span>
@@ -20,7 +21,9 @@
                         id="name"
                         placeholder="商品名を入力" />
                     <p class="register-form__error-message">
-                        <!--error message決定後記述-->
+                        @error('name')
+                        {{$message}}
+                        @enderror
                     </p>
                 </div>
             </div>
@@ -35,24 +38,29 @@
                         id="price"
                         placeholder="値段を入力" />
                     <p class="register-form__error-message">
-                        <!--error message決定後記述-->
+                        @error('price')
+                        {{$message}}
+                        @enderror
                     </p>
                 </div>
             </div>
             <div class="register-form__group">
                 <label class="register-form__label" for="image">商品画像</label>
                 <span class="register-form__label-span">必須</span>
+                <br>
                 <div class="register-form__input">
                     <input
-                        slass="resister-form__input-img"
+                        class="resister-form__input-img"
                         type="file"
-                        name="image" />
+                        name="image" id="image" />
                     <p class="register-form__error-message">
-                        <!--error message決定後記述-->
+                        @error('image')
+                        {{$message}}
+                        @enderror
                     </p>
                 </div>
             </div>
-            <div class="register-form__group">
+            <div class=" register-form__group">
                 <label class="register-form__label" for="season">季節</label>
                 <span class="register-form__label-span">必須</span>
                 <span class="register-form__label-note">複数選択可</span>
@@ -74,7 +82,9 @@
                         type="radio"
                         name="season" />冬
                     <p class="register-form__error-message">
-                        <!--error message決定後記述-->
+                        @error('season')
+                        {{$message}}
+                        @enderror
                     </p>
                 </div>
             </div>
@@ -88,7 +98,9 @@
                         id="description"
                         placeholder="商品の説明を入力"></textarea>
                     <p class="register-form__error-message">
-                        <!--error message決定後記述-->
+                        @error('description')
+                        {{$message}}
+                        @enderror
                     </p>
                 </div>
             </div>
@@ -96,7 +108,7 @@
                 <input
                     class="register-form__btn-return"
                     type="submit"
-                    value="戻る" />
+                    value="戻る" name="back" />
                 <input
                     class="register-form__btn-register"
                     type="submit"
